@@ -53,7 +53,7 @@ export default async function handler(req, res) {
 
   // 6. Préparation de l'email
   const mailOptions = {
-    from: `"${process.env.SMTP_FROM_NAME}" <${process.env.SMTP_FROM_EMAIL}>`,
+    from: `"${process.env.SMTP_FROM_NAME}" <${process.env.SMTP_FROM_EMAIL1}>`,
     to: to,
     subject: `Re: ${subject}`,
     text: body || 'Merci pour votre message. Nous traitons votre demande.',
